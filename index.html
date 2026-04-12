@@ -1,108 +1,368 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인정보 처리방침 | 나만의 한능검</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개인정보처리방침 | 나만의 한능검</title>
     <style>
-        body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.8; padding: 40px 20px; max-width: 900px; margin: auto; color: #333; background-color: #f4f7f9; }
-        .content-box { background: white; padding: 50px; border-radius: 15px; shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        h1 { font-size: 28px; color: #111; border-bottom: 3px solid #007bff; padding-bottom: 20px; }
-        h2 { font-size: 20px; color: #007bff; margin-top: 40px; border-left: 5px solid #007bff; padding-left: 15px; }
-        h3 { font-size: 17px; color: #333; margin-top: 25px; }
-        p, li { font-size: 15px; color: #555; text-align: justify; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 12px; font-size: 14px; }
-        th { background-color: #f8f9fa; font-weight: bold; }
-        .important { color: #d9534f; font-weight: bold; }
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --text: #182230;
+        --muted: #526071;
+        --line: #d7deea;
+        --accent: #1d4ed8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        word-break: keep-all;
+      }
+
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 24px 16px 56px;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 24px;
+      }
+
+      .topbar {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+      }
+
+      .link-chip {
+        display: inline-block;
+        padding: 9px 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #f8faff;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.4;
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: 22px;
+      }
+
+      h3 {
+        margin-top: 18px;
+        font-size: 17px;
+      }
+
+      p,
+      li {
+        margin: 0 0 10px;
+      }
+
+      .muted,
+      .meta {
+        color: var(--muted);
+      }
+
+      .hero {
+        margin-bottom: 16px;
+      }
+
+      .notice {
+        padding: 14px 16px;
+        border: 1px solid #bfd0ff;
+        background: #eef4ff;
+        border-radius: 8px;
+        color: #21417f;
+        margin-bottom: 18px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0 4px;
+      }
+
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 12px;
+        vertical-align: top;
+        text-align: left;
+      }
+
+      th {
+        background: #f8faff;
+      }
+
+      a {
+        color: var(--accent);
+      }
     </style>
-</head>
-<body>
-    <div class="content-box">
-        <h1>개인정보 처리방침</h1>
-        <p><strong>나만의 한능검</strong>(이하 ‘앱’이라 함)은 「개인정보 보호법」 제30조에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <a class="link-chip" href="./index.html">개인정보처리방침</a>
+        <a class="link-chip" href="./terms.html">이용약관</a>
+      </div>
 
-        <h2>제1조 (개인정보의 처리 목적)</h2>
-        <p>앱은 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
+      <div class="card hero">
+        <h1>개인정보처리방침</h1>
+        <p class="muted">
+          최적화공부(이하 "운영자")는 나만의 한능검(이하 "서비스") 이용자의
+          개인정보를 소중하게 생각하며, 관련 법령에 따라 개인정보를 안전하게
+          처리하기 위해 본 개인정보처리방침을 공개합니다.
+        </p>
+        <p class="meta">시행일: 2026년 4월 13일</p>
+      </div>
+
+      <div class="card">
+        <div class="notice">
+          서비스 이용 중 회원가입, 전화번호 인증, 학습 기록 동기화, 오류 제보,
+          인앱결제 기능 제공 과정에서 필요한 범위의 정보가 처리될 수 있습니다.
+        </div>
+
+        <h2>1. 수집하는 개인정보 항목</h2>
+        <p>
+          운영자는 회원가입, 서비스 제공, 학습 기록 동기화, 결제 상태 확인,
+          고객 문의 처리 등을 위해 아래 정보를 수집하거나 처리할 수 있습니다.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>수집·처리 항목</th>
+                <th>처리 목적</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>회원가입 및 로그인</td>
+                <td>
+                  소셜 로그인 제공자가 전달하는 식별자, 이메일 주소, 표시 이름,
+                  프로필 이미지, Firebase UID
+                </td>
+                <td>회원 식별, 로그인 유지, 계정 관리</td>
+              </tr>
+              <tr>
+                <td>프로필 정보</td>
+                <td>닉네임</td>
+                <td>서비스 내 표시 이름 설정, 이용자 식별</td>
+              </tr>
+              <tr>
+                <td>본인 확인</td>
+                <td>휴대전화 번호, 전화번호 인증 완료 여부 및 시각</td>
+                <td>본인 확인, 중복 사용 방지, 서비스 운영 안정성 확보</td>
+              </tr>
+              <tr>
+                <td>학습 데이터</td>
+                <td>
+                  풀이 이력, 학습 진행 상태, 오답 메모, 회차별 요약, 학습 타임라인
+                </td>
+                <td>학습 기록 저장, 기기 간 동기화, 사용자 편의 제공</td>
+              </tr>
+              <tr>
+                <td>이용권 및 무료체험</td>
+                <td>
+                  이용권 상태, 무료체험 시작 시각, 스토어 구매 상태, RevenueCat
+                  고객 정보
+                </td>
+                <td>프리미엄 혜택 제공, 구매 복원, 무료체험 운영</td>
+              </tr>
+              <tr>
+                <td>오류 제보</td>
+                <td>
+                  제목, 내용, 카테고리, 회차 번호, 문제 번호, 닉네임, UID,
+                  처리상태, 관리자 코멘트, 작성 시각
+                </td>
+                <td>오류 확인, 답변 및 처리 결과 안내</td>
+              </tr>
+              <tr>
+                <td>기기 내 저장 정보</td>
+                <td>학습 기록 일부, 최근 학습 상태, 앱 설정값 등 로컬 저장 데이터</td>
+                <td>앱 재실행 시 상태 유지, 사용자 경험 개선</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>2. 개인정보의 처리 목적</h2>
         <ul>
-            <li><strong>서비스 가입 및 관리:</strong> 소셜 로그인(Google, Apple, Kakao, Naver) 연동을 통한 회원 식별 및 가입 의사 확인, 본인 인증(전화번호), 회원자격 유지·관리, 서비스 부정이용 방지.</li>
-            <li><strong>재화 또는 서비스 제공:</strong> 유형별/키워드별 기출문제 검색 서비스, 개념 요약 서비스 제공, 오답노트 및 학습 통계 동기화, 3일 무료 체험 권한 부여, 콘텐츠 구매 및 결제 서비스 제공.</li>
-            <li><strong>고충처리:</strong> 민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락·통지, 처리 결과 통보.</li>
+          <li>회원 식별, 로그인 및 계정 관리</li>
+          <li>전화번호 인증 및 부정 이용 방지</li>
+          <li>문제풀이, 개념 학습, 오답 관리, 학습 기록 동기화</li>
+          <li>오류 제보 접수 및 처리 결과 안내</li>
+          <li>유료 서비스 제공, 구매 복원, 무료체험 운영</li>
+          <li>공지사항 제공 및 서비스 운영 관리</li>
         </ul>
 
-        <h2>제2조 (개인정보의 처리 및 보유 기간)</h2>
-        <p>① 앱은 법령에 따른 개인정보 보유·이용기간 또는 이용자로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
-        <p>② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.</p>
+        <h2>3. 개인정보의 보유 및 이용 기간</h2>
         <ul>
-            <li><strong>회원 가입 및 관리:</strong> 앱 탈퇴 시까지. 다만, 관계 법령 위반에 따른 수사·조사 등이 진행 중인 경우에는 해당 수사·조사 종료 시까지.</li>
-            <li><strong>전자상거래에서의 계약·청약철회, 대금결제, 재화 등의 공급기록:</strong> 5년 (전자상거래 등에서의 소비자보호에 관한 법률)</li>
+          <li>
+            회원 정보와 동기화된 학습 데이터는 원칙적으로 회원 탈퇴 또는 삭제
+            요청 시 지체 없이 삭제합니다.
+          </li>
+          <li>
+            다만 관련 법령에 따라 보관이 필요한 정보는 해당 기간 동안 별도로
+            보관할 수 있습니다.
+          </li>
+          <li>
+            오류 제보 및 문의 기록은 서비스 운영과 분쟁 대응을 위해 일정 기간
+            보관될 수 있습니다.
+          </li>
+          <li>
+            기기 내부에 저장된 데이터는 이용자가 앱을 삭제하거나 앱 데이터를
+            초기화할 때 제거될 수 있습니다.
+          </li>
         </ul>
 
-        <h2>제3조 (처리하는 개인정보의 항목)</h2>
-        <table>
-            <tr>
-                <th>수집 시점</th>
-                <th>수집 항목</th>
-                <th>수집 이유</th>
-            </tr>
-            <tr>
-                <td>소셜 로그인</td>
-                <td>UID(식별자), 이메일, 닉네임, 프로필 사진</td>
-                <td>회원 식별 및 계정 관리</td>
-            </tr>
-            <tr>
-                <td>최초 1회 인증</td>
-                <td><strong>전화번호</strong></td>
-                <td>중복 가입 방지 및 3일 무료 체험 오남용 방지</td>
-            </tr>
-            <tr>
-                <td>서비스 이용</td>
-                <td>학습 데이터(정/오답), 키워드 검색 기록, 결제 영수증 번호</td>
-                <td>맞춤형 학습 분석 및 구매 복구 서비스 제공</td>
-            </tr>
-            <tr>
-                <td>자동 수집</td>
-                <td>IP주소, 쿠키, 기기정보(모델명, OS), ADID/IDFA</td>
-                <td>부정 이용 방지 및 서비스 최적화</td>
-            </tr>
-        </table>
+        <h2>4. 개인정보의 제3자 제공</h2>
+        <p>
+          운영자는 원칙적으로 이용자의 개인정보를 외부에 판매하거나 제3자에게
+          제공하지 않습니다. 다만 법령에 특별한 규정이 있거나 이용자의 동의가
+          있는 경우에는 예외로 할 수 있습니다.
+        </p>
 
-        <h2>제4조 (개인정보의 제3자 제공)</h2>
-        <p>앱은 이용자의 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 이용자의 동의가 있거나 법률의 특별한 규정 등 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</p>
+        <h2>5. 개인정보 처리의 위탁 및 외부 서비스 이용</h2>
+        <p>운영자는 서비스 제공을 위해 아래 외부 서비스를 이용할 수 있습니다.</p>
 
-        <h2>제5조 (개인정보처리 위탁)</h2>
-        <p>앱은 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>서비스 제공자</th>
+                <th>주요 역할</th>
+                <th>관련 정보 예시</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google Firebase</td>
+                <td>인증, 데이터베이스 저장, 서버 함수 처리</td>
+                <td>
+                  계정 식별자, 닉네임, 전화번호 인증 정보, 학습 동기화 데이터,
+                  오류 제보 데이터
+                </td>
+              </tr>
+              <tr>
+                <td>Google Sign-In</td>
+                <td>Google 로그인 제공</td>
+                <td>이메일, 계정 식별 정보</td>
+              </tr>
+              <tr>
+                <td>Kakao / Naver / Apple</td>
+                <td>소셜 로그인 제공</td>
+                <td>각 제공자가 전달하는 계정 식별 정보</td>
+              </tr>
+              <tr>
+                <td>RevenueCat</td>
+                <td>인앱결제 상태 확인, 이용권 복원</td>
+                <td>앱 사용자 식별자, 이용권 상태, 구매 관련 메타데이터</td>
+              </tr>
+              <tr>
+                <td>Google Play / App Store</td>
+                <td>인앱결제 및 구독 처리</td>
+                <td>결제 상태, 구독 상태, 환불·취소 관련 정보</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>6. 국외 이전에 관한 사항</h2>
+        <p>
+          운영자는 Firebase, RevenueCat, 소셜 로그인 제공자, 앱 마켓 사업자 등
+          해외 인프라를 포함한 서비스를 이용할 수 있으며, 이 과정에서 개인정보가
+          대한민국 외 지역에서 처리될 수 있습니다. 실제 이전 국가와 보관 위치는
+          각 외부 서비스 제공자의 정책 및 인프라 운영 방식에 따릅니다.
+        </p>
+
+        <h2>7. 개인정보의 파기 절차 및 방법</h2>
         <ul>
-            <li><strong>위탁받는 자 (수탁자):</strong> Google Cloud / Firebase</li>
-            <li><strong>위탁하는 업무의 내용:</strong> 사용자 인증(Auth), 데이터베이스 저장(Firestore), 앱 이용 분석.</li>
+          <li>
+            개인정보의 처리 목적이 달성되거나 보관기간이 끝난 경우 지체 없이
+            파기합니다.
+          </li>
+          <li>
+            전자적 파일 형태의 정보는 복구가 어렵도록 합리적인 방법으로 삭제할 수
+            있습니다.
+          </li>
+          <li>
+            법령에 따라 일정 기간 보관이 필요한 정보는 별도로 분리하여 보관한 뒤
+            기간 경과 시 파기할 수 있습니다.
+          </li>
         </ul>
 
-        <h2>제6조 (이용자의 권리·의무 및 그 행사방법)</h2>
-        <p>이용자는 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다. 권리 행사는 앱 내 '탈퇴하기' 또는 서면, 전자우편 등을 통하여 하실 수 있으며 앱은 이에 대해 지체 없이 조치하겠습니다.</p>
-
-        <h2>제7조 (개인정보의 파기)</h2>
-        <p>① 앱은 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.</p>
-        <p>② 전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</p>
-
-        <h2>제8조 (개인정보의 안전성 확보 조치)</h2>
-        <p>앱은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</p>
+        <h2>8. 이용자의 권리와 행사 방법</h2>
         <ul>
-            <li>개인정보의 암호화: 주요 데이터는 암호화되어 저장 및 관리됩니다.</li>
-            <li>해킹 등에 대비한 기술적 대책: 보안 프로그램을 설치하고 주기적인 갱신·점검을 수행합니다.</li>
+          <li>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제를 요청할 수 있습니다.</li>
+          <li>
+            계정 삭제 및 데이터 삭제 요청은 운영자 이메일을 통해 접수할 수
+            있습니다.
+          </li>
+          <li>
+            기기 내부에 저장된 로컬 데이터는 앱 삭제 또는 기기 설정의 앱 데이터
+            삭제 기능으로 직접 제거할 수 있습니다.
+          </li>
         </ul>
 
-        <h2>제9조 (개인정보 보호책임자)</h2>
-        <p>앱은 개인정보 처리에 관한 업무를 총괄해서 책임지고, 이용자의 고충처리 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+        <h2>9. 개인정보의 안전성 확보 조치</h2>
         <ul>
-            <li><strong>성명:</strong> [본인 성함 입력]</li>
-            <li><strong>이메일:</strong> [본인 이메일 주소 입력]</li>
+          <li>접근 권한 관리와 인증 절차를 통해 개인정보 접근을 제한합니다.</li>
+          <li>외부 서비스 제공자의 보안 기능을 활용하여 데이터를 보호합니다.</li>
+          <li>관리자 권한이 필요한 기능은 제한적으로 운영합니다.</li>
         </ul>
 
-        <h2>제10조 (권익침해 구제방법)</h2>
-        <p>이용자는 개인정보 침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다.</p>
+        <h2>10. 개인정보 보호책임자 및 문의처</h2>
+        <ul>
+          <li>앱 이름: 나만의 한능검</li>
+          <li>개인사업자명: 최적화공부</li>
+          <li>운영자: 김상규</li>
+          <li>
+            문의 이메일:
+            <a href="mailto:rlatkdrb3@gmail.com">rlatkdrb3@gmail.com</a>
+          </li>
+        </ul>
 
-        <h2>제11조 (개인정보 처리방침 변경)</h2>
-        <p>이 개인정보 처리방침은 2026년 4월 13일부터 적용됩니다.</p>
+        <h2>11. 개인정보처리방침의 변경</h2>
+        <p>
+          본 방침은 서비스 기능 변경, 법령 변경, 외부 서비스 변경 등에 따라
+          수정될 수 있으며, 중요한 변경이 있는 경우 적절한 방법으로 안내할 수
+          있습니다.
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
